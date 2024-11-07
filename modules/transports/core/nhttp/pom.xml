@@ -104,7 +104,11 @@
                             </value>
                         </property>
                     </systemProperties>
-                    <argLine>-javaagent:target/lib/aspectjweaver.jar -Xms64m -Xmx128m</argLine>
+                    <argLine>
+                        -javaagent:target/lib/aspectjweaver.jar -Xms64m -Xmx128m
+                        --add-opens java.base/java.lang=ALL-UNNAMED
+                        --add-opens java.base/java.util=ALL-UNNAMED
+                    </argLine>
                 </configuration>
             </plugin>
             <plugin>
