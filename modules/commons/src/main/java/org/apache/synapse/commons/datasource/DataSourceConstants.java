@@ -134,7 +134,7 @@ public class DataSourceConstants {
             = "DataSourceInformationRepository";
 
     public static final String DEFAULT_IC_FACTORY
-            = "org.jboss.naming.remote.client.InitialContextFactory";
+            = "com.sun.jndi.rmi.registry.RegistryContextFactory";
 
     public static final int DEFAULT_PROVIDER_PORT = 2199;
 

@@ -104,7 +104,7 @@ public class JNDIBasedDataSourceRepositoryTest {
     public void testInit() throws UnknownHostException, IllegalAccessException, NoSuchFieldException {
         final String key1 = "java.naming.provider.url";
         final String key2 = "java.naming.factory.initial";
-        final String value2 = "org.jboss.naming.remote.client.InitialContextFactory";
+        final String value2 = "com.sun.jndi.rmi.registry.RegistryContextFactory";
         Assert.assertEquals("Asserting property 1 inserted by method", ((Properties) jndiProperties.get
                 (jndiBasedDataSourceRepository)).getProperty(key1), url);
         Assert.assertEquals("Asserting property 2 inserted by method", ((Properties) jndiProperties.get
