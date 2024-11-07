@@ -102,6 +102,9 @@
 					<!--<redirectTestOutputToFile>true</redirectTestOutputToFile> -->
 					<!--<workingDirectory>../..</workingDirectory> -->
 					<childDelegation>false</childDelegation>
+					<argLine>
+						--add-opens java.base/java.lang=ALL-UNNAMED
+					</argLine>
 				</configuration>
 			</plugin>
 			<plugin>
